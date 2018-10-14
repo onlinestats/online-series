@@ -1,0 +1,34 @@
+{
+  "name": "online-series",
+  "version": "0.0.1",
+  "description": "Stack multiple stats in one Series object",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlinestats/online-series.git"
+  },
+  "keywords": [
+    "stats",
+    "statistics",
+    "online",
+    "algorithms",
+    "data"
+  ],
+  "author": "Anton Zemlyansky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onlinestats/online-series/issues"
+  },
+  "homepage": "https://github.com/onlinestats/online-series#readme",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "online-covariance": "^1.0.2",
+    "online-group": "0.0.1",
+    "online-mean": "^1.1.1",
+    "online-variance": "^1.0.1",
+    "tape": "^4.9.1"
+  }
+}
