@@ -1,6 +1,6 @@
 {
   "name": "online-series",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stack multiple stats in one Series object",
   "main": "index.js",
   "scripts": {

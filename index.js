@@ -1,4 +1,4 @@
-var order = ['covariance', 'variance', 'mean'] // Order of functions. Last - first
+var order = ['covariance', 'std', 'variance', 'mean'] // Order of functions. Last - first
 
 module.exports = function Series () {
   var stats
