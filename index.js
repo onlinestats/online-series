@@ -32,8 +32,19 @@ module.exports = function Series () {
       // Add series results to sub-functions arguments
       Array.prototype.push.call(args, values)
       // Iterate over all series functions
-      stats.forEach(function (stat) {
-        values[stat.name] = stat.apply(null, args)
+      stats.forEach(function (s) {
+        var stat
+        var name
+        if (typeof s === 'object') {
+          // Detailed stat object
+          stat = s.stat
+          name = (s.name && s.name.length) ? s.name : s.stat.name
+        } else {
+          // Stat function
+          stat = s
+          name = s.name
+        }
+        values[name] = stat.apply(null, args)
         if (!isCounterUpdated) {
           values.n = stat.n
           isCounterUpdated = true
